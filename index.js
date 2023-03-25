@@ -34,15 +34,16 @@ return this.items[this.items.length - 1]
 
   sum() {
     let result = 0;
-    for (let i = 0; i < this.items.length; i++) {
-      return result += this.items[i];
-    }
-     
-  
-
     if (!this.items.length) {
       return 0;
     }
+    for (let i = 0; i < this.items.length; i++) {
+      result += this.items[i];
+    }
+    
+     
+    return result;
+  
   }
   avg() {
     if (!this.items.length) {
